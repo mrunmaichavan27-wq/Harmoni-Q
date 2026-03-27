@@ -1,0 +1,237 @@
+/* ================= ROOT VARIABLES ================= */
+
+:root {
+  --white-key-width: 56px;
+  --black-key-width: 38px;
+}
+
+/* ================= WRAPPER ================= */
+
+.piano1-wrapper {
+  background: #4a2c6a;
+  min-height: 100vh;
+  padding: 30px;
+  text-align: center;
+}
+
+.title {
+  color: #f0e6f6;
+  margin-bottom: 25px;
+}
+
+.button-row {
+  margin-bottom: 25px;
+}
+
+.btn-pink {
+  background: #b3295a;
+  border: none;
+  padding: 10px 22px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ================= Piano ================= */
+
+.piano-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* ================= White Keys ================= */
+
+.white-keys {
+  display: flex;
+  position: relative;
+}
+
+.white-key {
+  width: var(--white-key-width);
+  height: 220px;
+  background: linear-gradient(#fff, #eee);
+  border: 1px solid #ccc;
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+  position: relative;
+}
+
+.white-key.active {
+  background: #ddd;
+  transform: translateY(2px);
+}
+
+/* ================= Labels ================= */
+
+.note-label {
+  position: absolute;
+  bottom: 8px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 50;
+}
+
+.white-key .note-label {
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ================= Black Keys ================= */
+
+.black-keys-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  pointer-events: none;
+}
+
+.black-key {
+  width: var(--black-key-width);
+  height: 130px;
+  background: linear-gradient(#222, #000);
+  position: absolute;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  cursor: pointer;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: auto;
+}
+
+.black-key.active {
+  background: linear-gradient(#555, #222);
+  transform: translateY(2px);
+}
+
+.black-key .note-label {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* ================= Piano Description ================= */
+
+.piano-description {
+  max-width: 900px;
+  margin: 50px auto 0;
+  padding: 25px 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  text-align: left;
+  color: #f0e6f6;
+  line-height: 1.7;
+}
+
+/* ================================================= */
+/* 📱 MOBILE (FINAL & CORRECT) */
+/* ================================================= */
+
+@media (max-width: 768px) {
+  :root {
+    --white-key-width: 48px;
+    --black-key-width: 30px;
+  }
+
+  .piano-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 14px;
+  }
+  /* ===== PIANO GUIDE ===== */
+
+.piano-guide {
+  margin-top: 22px;
+  max-width: 420px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.piano-guide .guide-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 0.4px;
+}
+
+.piano-guide ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.piano-guide li {
+  margin: 6px 0;
+}
+
+.piano-guide strong {
+  color: #ffc107;
+}
+
+.piano-guide .hint {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+.btn-back {
+  margin-top: 50px;
+  background: linear-gradient(135deg, #ff00cc, #ff9900);
+  border: none;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+}
+  .white-keys,
+  .black-keys-container {
+    width: max-content;
+  }
+
+  .white-key {
+    height: 190px;
+  }
+
+  .black-key {
+    height: 115px;
+  }
+}
+/* ➕ RECORDING UI */
+
+.button-row button {
+  margin: 6px;
+}
+
+.recording {
+  box-shadow: 0 0 12px rgba(255, 0, 100, 0.7);
+}
+.back2-btn {
+  margin: 30px auto 60px;
+  display: block;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back2-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 193, 7, 0.35);
+}

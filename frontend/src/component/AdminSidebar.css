@@ -1,0 +1,37 @@
+.admin-sidebar {
+  width: 220px;
+  background: #1a043b;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.admin-logo {
+  margin-bottom: 30px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.admin-sidebar li.active,
+.admin-sidebar li:hover {
+  background: #8b5cf6;
+}
+
+.logout-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  background: #ef4444;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}

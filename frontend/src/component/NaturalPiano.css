@@ -1,0 +1,33 @@
+.natural-piano-wrapper {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  text-align: center;
+}
+
+.piano {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.white-key {
+  width: 56px;
+  height: 200px;
+  background: white;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.white-key:hover {
+  background: #f2f2f2;
+}
+
+.label {
+  font-size: 14px;
+}

@@ -1,0 +1,65 @@
+.piano-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  background: transparent;
+}
+
+.piano {
+  display: flex;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  height: 200px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.key {
+  position: relative;
+  list-style: none;
+}
+
+.white {
+  width: 60px;
+  height: 180px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1;
+  border-radius: 0 0 6px 6px;
+}
+
+.white:hover {
+  background: #f8f8f8;
+}
+
+.white i {
+  font-style: normal;
+  color: #000;
+}
+
+.black {
+  width: 36px;
+  height: 120px;
+  background: #000;
+  position: absolute;
+  top: 6px;
+  left: 41px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.35);
+}
+
+.black:hover {
+  background: #222;
+}

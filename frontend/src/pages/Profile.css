@@ -1,0 +1,219 @@
+/* ===== PAGE BACKGROUND ===== */
+body {
+  background: radial-gradient(circle at top, #1b0033, #0b001a, #000);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== GREETING ===== */
+.profile-greeting {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.profile-greeting span {
+  display: block;
+  font-size: 16px;
+  margin-top: 8px;
+  color: #ffc107;
+  letter-spacing: 1px;
+}
+
+/* ===== PROFILE CONTAINER ===== */
+.profile-container {
+  max-width: 760px;
+  margin: 0 auto 80px;
+  padding: 40px;
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 28px;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.9);
+  animation: fadeIn 0.8s ease;
+}
+.profile-container h1{
+  color: antiquewhite;
+    margin-bottom: 22px;
+}
+
+/* ===== SKILL CARDS ===== */
+.skill-card {
+  background: linear-gradient(145deg, #141414, #1b1b1b);
+  color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  transition: 0.4s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 35px 70px rgba(255, 193, 7, 0.35);
+}
+
+/* ===== GOLD GLOW BORDER ===== */
+.skill-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, gold, orange, gold);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: glowMove 4s linear infinite;
+
+  pointer-events: none; /* ✅ THIS FIXES EVERYTHING */
+}
+
+/* ===== TITLES ===== */
+.skill-card h3 {
+  font-size: 24px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+/* ===== STARS ===== */
+.skill-card p {
+  font-size: 34px;
+  color: gold;
+  letter-spacing: 6px;
+  text-shadow: 0 0 18px rgba(255,215,0,0.9);
+  margin-bottom: 14px;
+}
+
+/* ===== SCORE ===== */
+.skill-card small {
+  font-size: 15px;
+  color: #bbb;
+}
+
+/* ===== ANIMATIONS ===== */
+/* @keyframes glowMove {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .profile-container {
+    margin: 0 15px 40px;
+    padding: 25px;
+    
+  }
+
+  .skill-card {
+    padding: 22px;
+  }
+
+  .skill-card p {
+    font-size: 26px;
+    letter-spacing: 4px;
+  }
+
+  .profile-greeting {
+    font-size: 26px;
+  }
+}
+
+
+
+
+.beat-row {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.beat-row:last-child {
+  border-bottom: none;
+}
+
+/* Push buttons to the right */
+.beat-row span {
+  flex: 1;
+}
+
+
+
+.beat-row button {
+  border: none;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px; /* ✅ controlled spacing */
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+      background: red;
+}
+
+
+
+.beat-row button:first-of-type {
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  color: #000;
+}
+
+.beat-row button:first-of-type:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.6);
+}
+
+
+
+.beat-row button:last-of-type {
+  background: linear-gradient(135deg, #3a3a3a, #1f1f1f);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 107, 107, 0.35);
+}
+
+.beat-row button:last-of-type:hover {
+  background: linear-gradient(135deg, #ff4d4d, #c62828);
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 28px rgba(255, 77, 77, 0.55);
+}
+
+
+
+.beat-row button:active {
+  transform: scale(0.95);
+}
+.stop-btn {
+  margin-top: 16px;
+  padding: 8px 22px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff5252, #b71c1c);
+  color: #fff;
+  font-weight: 600;
+}

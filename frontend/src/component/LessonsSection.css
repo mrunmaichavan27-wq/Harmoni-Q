@@ -1,0 +1,35 @@
+.lessons-section {
+  background: linear-gradient(135deg, #1d1145, #3b2a80);
+  color: #fff;
+  padding: 6rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.lessons-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.lessons-text {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lessons-btn {
+  border: 2px solid #fff;
+  font-weight: 600;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.lessons-btn:hover {
+  background-color: #fff;
+  color: #1d1145;
+}

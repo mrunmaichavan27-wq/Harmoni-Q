@@ -1,0 +1,58 @@
+.instrument-wrapper {
+  text-align: center;
+    padding: 66px 0;
+  background: #1a002b;
+  color: white;
+}
+
+.main-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.main-title span {
+  color: #bb77ff;
+}
+
+.subtitle {
+  opacity: 0.8;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.instrument-onecard {
+  background: #2d0047;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(180, 0, 255, 0.3);
+  height: 50vh;
+}
+
+.instrument-onecard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(200, 0, 255, 0.6);
+}
+
+.icon {
+  margin-bottom: 15px;
+  color: #d7a7ff;
+}
+
+.glow-btn {
+  background: #b14aff;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 18px;
+  border: none;
+  transition: 0.3s;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 10px #d794ff;
+  background: #a533ff;
+}

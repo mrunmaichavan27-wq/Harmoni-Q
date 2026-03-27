@@ -1,0 +1,74 @@
+/* Tooltip wrapper */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Word that user hovers */
+.tooltip-trigger {
+  color: #e666ff;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px dotted rgba(230, 102, 255, 0.6);
+}
+
+/* Tooltip box */
+.tooltip-box {
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 240px;
+  max-width: 300px;
+
+  background: rgba(30, 10, 60, 0.95);
+  color: #ffffff;
+
+  padding: 14px 16px;
+  border-radius: 10px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+
+  z-index: 9999;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Tooltip title */
+.tooltip-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #e666ff;
+}
+
+/* Tooltip content */
+.tooltip-content {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e8dcff;
+}
+
+/* Arrow */
+.tooltip-box::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgba(30, 10, 60, 0.95) transparent transparent transparent;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}

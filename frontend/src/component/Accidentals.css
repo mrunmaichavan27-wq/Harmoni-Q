@@ -1,0 +1,157 @@
+/* Entire page */
+.accidentals-page {
+  background: #190634; /* deep purple */
+  min-height: 100vh;
+  padding: 0px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main title */
+.accidentals-title {
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Card container (purple-glass style) */
+.accidentals-card {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+}
+/* Accidentals List */
+.accidental-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Each row (symbol + text) */
+.accidental-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* The accidental symbols */
+.accidental-symbol {
+  font-size: 45px;
+  font-weight: bold;
+  width: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Double flat should show both flats spaced nicely */
+.double-flat {
+  letter-spacing: -5px;
+}
+
+.accidental-row p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #e6d7ff;
+  margin: 0;
+}
+
+.accidental-row strong {
+  color: #e666ff;
+}
+
+
+/* Section Titles */
+.accidentals-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Images */
+.accidentals-img {
+     width: 77%;
+  border-radius: 12px;
+  margin: 20px 0;
+  display: block;
+}
+.accidentals-img2
+{
+         width: 56%;
+    border-radius: 12px;
+    margin: 20px 0;
+    display: block;
+}
+.accidental-rules li {
+  color: #e2d5ff; 
+  font-size: 18px;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+/* Caption */
+.caption {
+  text-align: center;
+  font-style: italic;
+  color: #d8cfff;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.accidentals-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Highlighted words */
+.accidentals-card strong {
+  color: #e666ff;
+}
+
+/* ------------------------------------------------------ */
+/* 📌 CONTENTS BOX */
+/* ------------------------------------------------------ */
+.contents-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px 30px;
+  border-radius: 15px;
+  margin: 25px 0;
+  width: fit-content;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contents-box h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contents-box ol {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.contents-box ol li {
+  padding: 6px 0;
+  font-size: 18px;
+  color: #d8cfff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.contents-box ol li:hover {
+  color: #e666ff;
+  transform: translateX(3px);
+}
+

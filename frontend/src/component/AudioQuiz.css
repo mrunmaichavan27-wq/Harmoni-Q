@@ -1,0 +1,139 @@
+.audio-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #2a0a5e, #0a021a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.audio-page p{
+      font-size: larger;
+}
+/* ===== CARD ===== */
+.audio-card {
+  background: #120726;
+  padding: 40px;
+  width: 520px;
+  border-radius: 28px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 25px 60px rgba(140, 80, 255, 0.35);
+}
+.result-card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e9ddff;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.result-card p {
+  font-size: 16px;
+  color: #b9a6ff;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.back-btn {
+  display: block;
+  margin: 30px auto 0; /* centers horizontally */
+}
+/* ===== PLAY BUTTON ===== */
+.play-btn {
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  margin: 20px 0 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.25s ease;
+}
+
+.play-btn:hover {
+  background: #a78bfa;
+  transform: scale(1.05);
+}
+
+/* ===== GRID ===== */
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* ===== FLIP CARD ===== */
+.option-btn {
+  perspective: 1000px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* CARD INNER */
+.option-inner {
+  position: relative;
+  height: 80px;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+/* FRONT & BACK */
+.option-front,
+.option-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* FRONT */
+.option-front {
+  background: #2b146b;
+  color: white;
+}
+
+/* BACK */
+.option-back {
+  background: #1f123f;
+  transform: rotateY(180deg);
+  font-size: 28px;
+}
+
+/* ===== CORRECT ===== */
+.option-btn.correct .option-inner {
+  transform: rotateY(180deg);
+  box-shadow: 0 0 22px rgba(34, 197, 94, 0.9);
+}
+
+.option-btn.correct .option-back {
+  background: #22c55e;
+}
+
+/* ===== WRONG ===== */
+.option-btn.wrong .option-inner {
+  transform: rotateY(180deg);
+  box-shadow: 0 0 22px rgba(239, 68, 68, 0.9);
+  animation: shake 0.35s;
+}
+
+.option-btn.wrong .option-back {
+  background: #ef4444;
+}
+
+/* ===== SHAKE ===== */
+@keyframes shake {
+  0%   { transform: translateX(0) rotateY(180deg); }
+  25%  { transform: translateX(-5px) rotateY(180deg); }
+  50%  { transform: translateX(5px) rotateY(180deg); }
+  75%  { transform: translateX(-5px) rotateY(180deg); }
+  100% { transform: translateX(0) rotateY(180deg); }
+}
+ 

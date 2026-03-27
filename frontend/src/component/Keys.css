@@ -1,0 +1,202 @@
+/* ========== PAGE WRAPPER ========== */
+.keys-page {
+  background: #190634;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+/* ========== PAGE TITLE ========== */
+.keys-title {
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* ========== CARD ========== */
+.keys-card {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== HEADINGS ========== */
+.keys-card h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.keys-card h3 {
+  font-size: 24px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.keys-card strong {
+  color: #e666ff;
+}
+
+/* ========== PARAGRAPHS ========== */
+.keys-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* ========== IMAGE STYLING ========== */
+.keys-img {
+        width:76%;
+  border-radius: 12px;
+  margin: 20px 0;
+  display: block;
+}
+.keys-img2
+{
+         width: 56%;
+    border-radius: 12px;
+    margin: 20px 0;
+    display: block;
+}
+
+.triad-table-wrapper {
+  margin-top: 25px;
+  overflow-x: auto;
+}
+
+.triad-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.08); /* SAME content bg */
+  border-radius: 14px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+.triad-table th,
+.triad-table td {
+  padding: 16px 18px;
+  text-align: left;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.triad-table th {
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.triad-table tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.triad-table td:nth-child(2),
+.triad-table td:nth-child(4) {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.triad-table tbody tr:hover {
+  background: rgba(230, 102, 255, 0.12);
+}
+td:last-child {
+  vertical-align: middle;
+ 
+}
+
+td img {
+  display: block;
+  margin: 0 auto;
+  max-height: 90px;
+  
+}
+
+/* ========== CONTENTS BOX ========== */
+.contents-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px 30px;
+  border-radius: 15px;
+  margin: 25px 0;
+  width: fit-content;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contents-box h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contents-box ol {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.contents-box ol li {
+  padding: 6px 0;
+  font-size: 18px;
+  color: #d8cfff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.contents-box ol li:hover {
+  color: #e666ff;
+  transform: translateX(3px);
+}
+/* ========== LISTS INSIDE CARDS ========== */
+.keys-card ul {
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.keys-card ul li {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+/* ========== TABLE (If Needed Later) ========== */
+.keys-table-wrapper {
+  margin-top: 25px;
+  overflow-x: auto;
+}
+
+.keys-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+.keys-table th,
+.keys-table td {
+  padding: 16px 18px;
+  text-align: left;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.keys-table th {
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.keys-table tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.keys-table tbody tr:hover {
+  background: rgba(230, 102, 255, 0.12);
+}

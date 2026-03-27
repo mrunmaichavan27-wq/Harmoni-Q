@@ -1,0 +1,78 @@
+/* WHITE PAGE */
+.instrument1-wrapper {
+  background: #ffffff;
+  padding: 50px 0;
+}
+
+/* SAME WIDTH AS YOUR FIRST CARD */
+.instrument1-row {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD SIZE — SAME LOOK */
+.instrument1-card {
+     height: 386px; 
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  
+  position: relative;
+ 
+  overflow: hidden;
+}
+
+/* ONLY TEXT BACKGROUND */
+.instrument1-textbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 22px;
+  background: rgba(25, 14, 55, 0.75); /* 👈 LIGHT transparency */
+  border-radius: 0 0 20px 20px;
+}
+
+/* TEXT */
+.instrument1-subtitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #c2bdf5;
+  font-weight: 600;
+}
+
+.instrument1-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 6px 0;
+}
+
+.instrument1-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e6e3ff;
+}
+
+/* BUTTON */
+.instrument1-btn {
+  margin-top: 10px;
+  padding: 8px 22px;
+  border-radius: 20px;
+  border: none;
+  background: #ffffff;
+  color: #1d1145;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .instrument1-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,93 @@
+/* NAVBAR BASE */
+.custom-navbar {
+  position: sticky;
+  top: 0;
+
+ background-color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+  
+  z-index: 1100;      /* above quiz */
+}
+
+
+.logo-img {
+ height: 76px;
+    width: 165%;
+  object-fit: contain;
+}
+
+/* MAIN MENU ITEMS */
+.menu-item {
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: #000 !important;
+     font-size: 1.30rem;
+  text-decoration: none !important;
+  margin: 0 12px;
+  transition: all 0.25s ease;
+  border: none !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover menu style */
+.menu-item:hover {
+  background: #eae6f7; /* softer highlight */
+  color: #1d1145 !important; /* dark purple */
+}
+
+/* ACTIVE MENU STYLE */
+.active-menu,
+.menu-item.active,
+.menu-item:focus {
+  background: #d39feb;
+  color: #1d1145 !important;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* LOGIN BUTTON */
+.custom-btn {
+  background-color: #1d1145 !important;
+  border: none !important;
+  font-weight: 600;
+  padding: 8px 22px;
+  border-radius: 30px;
+  transition: all 0.25s ease;
+}
+
+.custom-btn:hover {
+  background-color: #2b1d6e !important;
+}
+
+/* MOBILE MENU FIXES */
+@media (max-width: 992px) {
+  .menu-item {
+    margin: 8px 0;
+    padding: 10px 18px;
+  }
+
+  .custom-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.profile-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #633bdb, #8874d9);
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-circle:hover {
+  transform: scale(1.1);
+}

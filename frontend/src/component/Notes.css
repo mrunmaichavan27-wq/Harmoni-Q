@@ -1,0 +1,162 @@
+/* Entire page */
+.notes-page {
+  background: #190634; /* deep purple */
+  min-height: 100vh;
+  padding: 0px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main title */
+.notes-title {
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Card container (purple-glass style) */
+.notes-card {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+/* Section Titles */
+.notes-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Images */
+.notes-img {
+     width: 87%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+/* Caption */
+.caption {
+  text-align: center;
+  font-style: italic;
+  color: #d8cfff;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.notes-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Highlighted words */
+.notes-card strong {
+  color: #e666ff;
+}
+
+/* ------------------------------------------------------ */
+/* 📌 CONTENTS BOX */
+/* ------------------------------------------------------ */
+.contents-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px 30px;
+  border-radius: 15px;
+  margin: 25px 0;
+  width: fit-content;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contents-box h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contents-box ol {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.contents-box ol li {
+  padding: 6px 0;
+  font-size: 18px;
+  color: #d8cfff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.contents-box ol li:hover {
+  color: #e666ff;
+  transform: translateX(3px);
+}
+
+.octave-table-wrapper {
+  background: rgba(128, 0, 128, 0.05); 
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* Table transparency */
+.octave-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.08); 
+  border-radius:2px;
+  overflow: hidden;
+}
+
+/* Header transparent purple */
+.octave-table thead th {
+  background: rgba(128, 0, 128, 0.12); 
+  color: #e2d5ed; 
+  font-weight: 600;
+  padding: 12px;
+  font-size: 18px;
+}
+
+/* Rows all same transparent shade */
+.octave-table tbody tr {
+  background: rgba(128, 0, 128, 0.06); 
+}
+
+.octave-table tbody td {
+    padding: 12px;
+    border: 1px solid rgba(128, 0, 128, 0.15);
+    color: #e9e4ec;
+}
+
+/* Play button */
+.play-btn {
+  background: rgba(128, 0, 128, 0.15);
+  border: 1px solid rgba(128, 0, 128, 0.3);
+  color: #4a0a80;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.play-btn:hover {
+  background: rgba(128, 0, 128, 0.25);
+}
+
+/* Time label */
+.time-label {
+  background: rgba(128, 0, 128, 0.10);
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #4a0a80;
+}

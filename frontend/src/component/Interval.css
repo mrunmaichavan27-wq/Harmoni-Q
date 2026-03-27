@@ -1,0 +1,163 @@
+/* Entire page */
+.interval-page {
+  background: #190634;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main title */
+.interval-title {
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Card container */
+.interval-card {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+}
+.interval-img {
+        width: 73%;
+  border-radius: 12px;
+  margin: 20px 0;
+  display: block;
+}
+.interval-img2
+{
+         width: 56%;
+    border-radius: 12px;
+    margin: 20px 0;
+    display: block;
+}
+.interval-list {
+  margin-top: 15px;
+  padding-left: 25px;
+}
+
+.interval-list li {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.interval-list2 {
+  margin: 15px 0 25px;
+  padding-left: 25px;
+}
+
+.interval-list2 li {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+
+/* Section Titles */
+.interval-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Paragraphs */
+.interval-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Highlight */
+.interval-card strong {
+  color: #e666ff;
+}
+
+/* ---------------- CONTENTS BOX ---------------- */
+.contents-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px 30px;
+  border-radius: 15px;
+  margin: 25px 0;
+  width: fit-content;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contents-box h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contents-box ol {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.contents-box ol li {
+  padding: 6px 0;
+  font-size: 18px;
+  color: #d8cfff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.contents-box ol li:hover {
+  color: #e666ff;
+  transform: translateX(3px);
+}
+.interval-table-wrapper {
+  margin: 30px 0;
+  overflow-x: auto;
+}
+
+/* Table glass background */
+.interval-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.08); /* SAME as contents-box */
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Header */
+.interval-table thead {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.interval-table th {
+  padding: 16px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Body cells */
+.interval-table td {
+  padding: 14px 16px;
+  font-size: 17px;
+  color: #e6ddff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Row hover */
+.interval-table tbody tr:hover {
+  background: rgba(230, 102, 255, 0.12);
+}
+
